@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #243b55, #537895);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #ffd166;
+    color: #243b55;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.featured {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.featured h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000015;
+    padding-bottom: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 18px 0 10px;
+}
+
+.card p {
+    padding: 0 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #315b7d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}
+

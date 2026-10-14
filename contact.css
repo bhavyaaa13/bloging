@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    background-color: #243b55;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-info h3 {
+    margin: 30px 0 15px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 35px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.contact-form h2 {
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #537895;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #537895;
+}
+
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 30px 15px;
+    }
+}
+
